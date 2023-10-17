@@ -25,4 +25,7 @@ int main(){
   my_thread.join();
   my_another_thread.join();
   my_yet_another_thread.join();
+
+  // knowing the number of allowable threads in runtime 
+  std::cout << "Supports " << std::thread::hardware_concurrency();
 }
